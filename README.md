@@ -2,13 +2,15 @@
 
 The Ultimate Food Finder is an app that helps you find dishes that are not only good for your health but also delicious and easy to make by your standards. See full proposal here: https://github.com/cstorm125/food/blob/master/proposal.ipynb
 
-Almost 4 in 10 US adults are obese according to Centers for Disease Control and Prevention, costing the country $147 billion in medical bills in 2008 (Overweight & Obesity, 2018). One of the main reasons is believed to be eating behaviors, and it is not always lack of responsibility on our part that we do not eat in a healthy way. Pew Research Center did a national survey of 2,250 adults and found that 73% of those who eat junk food do so because of convenience. The main assumption of this proposal is that people do not eat unhealthy food by choice but necessity. Therefore, a tool for them to discover food with the optimal balance of health, taste and convenience will lead to a more healthy lifestyle and minimize healthcare spending.
-
 We sift through over 240,000 recipes on allrecipes.com to bring you the right recipe based on nutritional facts, quantity and complexity of instructions, time taken to prepare the dish, prevalence of ingredients, ratings and reviews of the recipe and from user accounts. As a proof of concept, we successfully scraped about 1% of the dataset and created plots showing tradeoffs between conveience and nutritional values as well as deliciousness. 
 
 Figure 1 is a scatterplot of recipies with highest vitamins as percentage of daily intake on one axis and time used to prepare and cook the meal on the other. We also did a clustering on the recipes to determine groups of similar dishes. This allows us to choose to make the group of dishes that take less time and are more healthy.
 
+![Figure 1](https://github.com/cstorm125/food/blob/master/figure1.png?raw=true)
+
 Figure 2 is another scatterplot of recipies with ratings on one axis and number of ingredients on the other (each ingredient is weighted using inverse document frequency to give more weights to rare ingredients). We can look at this plot and choose the dish that is delicious (by popular demands) and easy to make.
+
+![Figure 2](https://github.com/cstorm125/food/blob/master/figure2.png?raw=true)
 
 For the 8-week capstone, we can develop more nuanced metrics that represent the three pillars of this proposal: convenience, health, taste. Instead of just time to finish and ingredient availability, we can add localization of ingredients (scraping more datasets), ease of substitution (graph analysis), instruction complexity (text mining). For nutritions, we can find a more objective and academically rigorous representations of a healthy meal, and plan not just for one meal but for the day or even week. And instead of overall popularity as deliciousness, we can build a recommendation engine for each person based on user reviews (collaborative filtering).
 
